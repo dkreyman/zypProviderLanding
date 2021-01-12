@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+  <header>
+   <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Owl Carousel & icofont -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://allyoucan.cloud/cdn/icofont/1.0.1/icofont.css" integrity="sha384-jbCTJB16Q17718YM9U22iJkhuGbS0Gd2LjaWb4YJEZToOPmnKDjySVa323U+W7Fv" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="<%= Routes.static_path(@conn, "/css/app.css") %>"/>
+
+
+    <title>ZypWork | Instant Help Today!</title>
+    <link rel="icon" src="/images/zypicon.png">
+
+  </header>
+  <body>
+    <nav class="navbar navbar-dark navbar-expand-md py-0 fixed-top" style="border-bottom: 5px solid rgb(14, 172, 235); background-color: white;">
+      <a class="navbar-brand ml-5" href="#">
+        <img src="/images/zypwork-logo.png" width="50%" alt="">
+      </a>
+      <div class="collapse navbar-collapse justify-content-end mr-5 d-block">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a id="callortext" href="tel:888-383-8461">CALL OR TEXT: <br><span style="text-decoration:underline;">  888-383-8461</span></a>
+          </li>
+        </ul>
+      </div>
+    </nav> 
+
+    <section class="px-5 headline-margin" style="background-color: white">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="text-center headline-margin my-3">
+            <h1>Quickly Get Help! With</h1>
+            <h1>Painless Task Outsourcing!</h1>
+            <h2>And Get Back <ins>Control Of Your Time...</ins></h2>
+            <h4>(Without Having To Hire Yourself)</h4>
+          </div>
+          <!-- VSL On Mobile (before signup btn) -->
+          <div class="col-lg-6 d-lg-none">
+            <iframe width="100%" height="460rem" src="https://www.youtube.com/embed/Q9tsXOljFQ8?rel=0&amp;modestbranding=1&amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="text-center px-5">
+            <!-- Trigger/Open The Modal -->
+            <button class="signupBtn btn btn-primary btn-lg mt-3">Signup Now!</button>
+            <!-- The Signup Modal -->
+            <div id="signupModal" class="modal">
+
+            <!-- Signup Form Modal content -->
+            <div class="modal-content">
+              <span class="close align-self-end">&times;</span>
+              <div class="signup-form">
+              <form action="/examples/actions/confirmation.php" method="post">
+		          <h2>Register</h2>
+		          <p class="hint-text">Create your account. It's free and only takes a minute.</p>
+                  <div class="form-group">
+		          	<div class="row">
+		          		<div class="col"><input type="text" class="form-control" name="first_name" placeholder="First Name" required="required"></div>
+		          		<div class="col"><input type="text" class="form-control" name="last_name" placeholder="Last Name" required="required"></div>
+		          	</div>        	
+                  </div>
+                  <div class="form-group">
+                  	<input type="email" class="form-control" name="email" placeholder="Email" required="required">
+                  </div>
+		          <div class="form-group">
+                      <input type="password" class="form-control" name="password" placeholder="Password" required="required">
+                  </div>
+		          <div class="form-group">
+                      <input type="password" class="form-control" name="confirm_password" placeholder="Confirm Password" required="required">
+                  </div>        
+                  <div class="form-group">
+		          	<label class="form-check-label"><input type="checkbox" required="required"> I accept the <a href="#">Terms of Use</a> &amp; <a href="#">Privacy Policy</a></label>
+		          </div>
+		          <div class="form-group">
+            <button type="submit" class="btn btn-success btn-lg btn-block">Register Now</button>
+            </div>
+            </form>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>  
+           <!-- VSL On Desktop-->
+        <div class="col-lg-6 d-none d-lg-block">
+          <iframe width="100%" height="460rem" src="https://www.youtube.com/embed/Q9tsXOljFQ8?rel=0&amp;modestbranding=1&amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
+<!-- App Testimonials Section -->
+    <section style="background-color: #FFFFFF" class="border-top border-bottom">
+      <div class="container-fluid">
+        <div class="row justify-content-center text-center mb-5">
+          <div class="col-md-4">
+            <h2 class="section-heading">App Store Reviews</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center text-center">
+          <div class="col-md-7">
+            <div class="owl-carousel testimonial-carousel">
+               <div class="review text-center">
+                <p class="stars">
+                  <span class="icofont-star"></span>
+                  <span class="icofont-star"></span>
+                  <span class="icofont-star"></span>
+                  <span class="icofont-star"></span>
+                  <span class="icofont-star"></span>
+                </p>
+                <h3>Awesome</h3>
+                <blockquote>
+                  <p>ZypWork is absolutely amazing... As a mother of three kids its my magic stick. I got good experience in cleaning services. Thanks you so much guys for excellent work. Highly recommend. I will certain use your app next time</p>
+                </blockquote>
+
+                <p class="review-user">
+                  <span class="d-block">
+                    <span class="text-black">Kamillahon</span>, &mdash; ZypWork User
+                  </span>
+                </p>
+
+              </div>
+
+              <div class="review text-center">
+                <p class="stars">
+                  <span class="icofont-star"></span>
+                  <span class="icofont-star"></span>
+                  <span class="icofont-star"></span>
+                  <span class="icofont-star"></span>
+                  <span class="icofont-star"></span>
+                </p>
+                <h3>Great help!</h3>
+                <blockquote>
+                  <p>I never seen anything like that. I could find a moving team that were on time and did good job. Now I know where to look for helpers next time.</p>
+                </blockquote>
+
+                <p class="review-user">
+                  <span class="d-block">
+                    <span class="text-black">Sola127</span>, &mdash; ZypWork User
+                  </span>
+                </p>
+
+              </div>
+
+              <div class="review text-center">
+                <p class="stars">
+                  <span class="icofont-star"></span>
+                  <span class="icofont-star"></span>
+                  <span class="icofont-star"></span>
+                  <span class="icofont-star"></span>
+                  <span class="icofont-star"></span>
+                </p>
+                <h3>Great idea</h3>
+                <blockquote>
+                  <p>My friend bakes pastry from home and uses Zypwork as a delivery service to her customers in the area. No Uber or town taxi will do it. Amazing idea and service! I am glad she shared this with me, I'm definitely gonna use ZypWork too.</p>
+                </blockquote>
+
+                <p class="review-user">
+                  <span class="d-block">
+                    <span class="text-black">sarkizana</span>, &mdash; ZypWork User
+                  </span>
+                </p>
+
+              </div>
+
+              <div class="review text-center">
+                <p class="stars">
+                  <span class="icofont-star"></span>
+                  <span class="icofont-star"></span>
+                  <span class="icofont-star"></span>
+                  <span class="icofont-star"></span>
+                  <span class="icofont-star"></span>
+                </p>
+                <h3>Good</h3>
+                <blockquote>
+                  <p>My sales increased because i hired a promoters through Zypwork. It was great offer for professional service. Highly recommend for business owners. You'll be happy like me :)</p>
+                </blockquote>
+
+                <p class="review-user">
+                  <span class="d-block">
+                    <span class="text-black">toyseller</span>, &mdash; ZypWork User
+                  </span>
+                </p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Testimonials Section -->
+
+    <!-- Video Testimonials Section --> 
+    <section class="section align-item-end" style="background-color: white">
+      <div class="container-fluid">
+        <div class="row justify-content-center text-center my-5">
+          <div class="col-5">
+            <h3 class="h3 heading">Video Testimonials:</h3>
+          </div>
+        </div>
+        <div class="row mx-5">
+          <div class="col-sm-4 col-md-4 col-lg-4 mb-3">
+            <h5>Cleaning Service:</h5>
+            <iframe width="100%" height="230rem" src="https://www.youtube.com/embed/Q9tsXOljFQ8?rel=0&amp;modestbranding=1&amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="col-sm-4 col-md-4 col-lg-4 mb-3">
+            <h5>Baby Sitting:</h5>
+            <iframe width="100%" height="230rem" src="https://www.youtube.com/embed/Q9tsXOljFQ8?rel=0&amp;modestbranding=1&amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="col-sm-4 col-md-4 col-lg-4 mb-3">
+            <h5>Movers:</h5>
+            <iframe width="100%" height="230rem" src="https://www.youtube.com/embed/Q9tsXOljFQ8?rel=0&amp;modestbranding=1&amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="row mx-5 pt-2">
+          <div class="col-sm-4 col-md-4 col-lg-4 mb-3">
+            <h5>Errands:</h5>
+            <iframe width="100%" height="230rem" src="https://www.youtube.com/embed/Q9tsXOljFQ8?rel=0&amp;modestbranding=1&amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="col-sm-4 col-md-4 col-lg-4 mb-3">
+            <h5>Handyman:</h5>
+            <iframe width="100%" height="230rem" src="https://www.youtube.com/embed/Q9tsXOljFQ8?rel=0&amp;modestbranding=1&amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+          <div class="col-sm-4 col-md-4 col-lg-4 mb-3">
+            <h5>Remodeling:</h5>
+            <iframe width="100%" height="230rem" src="https://www.youtube.com/embed/Q9tsXOljFQ8?rel=0&amp;modestbranding=1&amp;showinfo=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of Video Testimonials Section --> 
+
+     <!-- ======= Details Section / Check Mark Stack ======= -->
+    <section id="details" class="details px-3 mx-3">
+      <div class="container">
+        <div class="row content">
+          <div class="col-md-5 order-2 order-md-1" style="margin-bottom: -30rem">
+            <img src="images/Helper.jpg" class="img-fluid d-none d-lg-block" style=" height: 70%;float: right;">
+          </div>
+          <div class="col-md-7 pt-5 order-1 order-md-2 px-5">
+            <h3 class="py-4" style="text-align: left;">ZypWork: From To-Do, To-Done</h3>
+            <ul>
+              <li><i class="icofont-check"></i> Schedule Around Your Schedule</li>
+              <li><i class="icofont-check"></i> Trusted By Single Mothers & Businesses Alike</li>
+              <li><i class="icofont-check"></i> Tailored To Your Needs</li>
+              <li><i class="icofont-check"></i> Investor Backed</li>
+              <li><i class="icofont-check"></i> Smart & Easy</li>
+              <li><i class="icofont-check"></i> New</li>
+              <button class="signupBtn btn btn-primary btn-lg btn-block mt-5" style="text-align: center">Signup Now!</button>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- End Details Section -->
+
+    <!-- ======= Frequently Asked Questions Section ======= -->
+
+    <div class="px-5 mx-5">
+      <h2 class="py-1 mt-5 pt-5">FAQ:</h2>
+
+      <button class="accordion">How does ZypWork Work?</button>
+      <div class="panel">
+        <p>You can request help and get connected to a helper fast. A future time slot can be scheduled as well.</p>
+      </div>
+
+      <button class="accordion">How much does it cost?</button>
+      <div class="panel">
+       <p>Those hiring help will name the price of what they want to pay for the service. The platform will connect you with a helper who agrees on the price.</p>
+      </div>    
+
+      <button class="accordion">Is there a fee to use the platform?</button>
+      <div class="panel">
+        <p>For hiring a helper: There is a booking fee of 5% for hiring a helper (this can be waived by joining as a monthly subscriber). The fees are already deducted from the prices shown. </p>
+      </div>
+
+      <button class="accordion">Can I work with a helper outside the plateform?</button>
+      <div class="panel">
+        <p>This is highly discouraged. The app provides project insurance and protocols to ensure satisfaction for both sides of the transaction. </p>
+      </div>
+
+      <button class="accordion">How is satisfaction maintained?</button>
+      <div class="panel">
+        <p>The app monitor's both sides of satisfaction with guidelines. Helpers will be blocked from use if criteria is not met.</p>
+      </div>
+
+      <button class="accordion">How are helpers paid?</button>
+      <div class="panel">
+        <p>ZypWork coordinates and takes care of all payments.</p>
+      </div>    
+    </div >
+    <%# End of FAQ %>
+
+    <script type="text/javascript">
+      //FAQ Accordian
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+  
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+          this.classList.toggle("clicked");
+          var panel = this.nextElementSibling;
+          if (panel.style.display === "block") {
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block";
+          }
+        });
+      }
+
+      // Get the modal
+      var modal = document.getElementById("signupModal");
+
+      // Get the button that opens the modal
+      var btn = document.getElementsByClassName("signupBtn");
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+
+      // When the user clicks the button, open the modal 
+      for (i = 0; i < btn.length; i++) { 
+        btn[i].onclick = function() {
+          modal.style.display = "block";
+        }
+      }
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.sticky/1.0.4/jquery.sticky.min.js" integrity="sha512-QABeEm/oYtKZVyaO8mQQjePTPplrV8qoT7PrwHDJCBLqZl5UmuPi3APEcWwtTNOiH24psax69XPQtEo5dAkGcA==" crossorigin="anonymous"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="<%= Routes.static_path(@conn, "/js/app.js") %>"></script> 
+  
+
+  </body>
+</html>
+
+
+
+
+  
+  
